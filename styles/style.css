@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(50, 132, 57), rgb(150, 148, 26));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+
+h2{
+    font-size: 60px;
+    color: antiquewhite;
+    font-style: italic;
+}
+
+main{
+    width:80%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#form-container{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+#form{
+    background-color: white;
+    padding: 30px;
+    width: 500px;
+    height: 600px;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    border-radius: 8px;
+}
+
+#item{
+    text-align: center;
+}
+
+#todoContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#card-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #eef1ea;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+select{
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#card-items > input{
+    width: 200px;
+    margin: 10px;
+    height: 40px;
+    font-size: x-large;
+    padding-left: 5px;
+    border-radius: 10px;
+    border: 5px solid #E5E7EB;
+}
+
+
+input{
+    width: 350px;
+    height: 50px;
+    font-size: x-large;
+    padding-left: 5px;
+    border-radius: 10px;
+    border: 5px solid #E5E7EB;
+}
+
+input:focus{
+    border-color: blue;
+    box-shadow: 0 0 2px #665df5;
+    background-color: rgb(228, 222, 222);
+}
+
+textarea{
+    width: 350px;
+    height: 150px;
+    font-size: x-large;
+    padding-left: 5px;
+    border-radius: 10px;
+    border: 5px solid #E5E7EB;
+    resize: none;
+}
+
+
+button{
+    display: inline;
+    width: fit-content;
+    background-color: #596D48;
+    padding: 20px 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;  
+}
+
+button:hover{
+    background-color: rgb(243, 237, 237);
+    color: black;
+}
