@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <header id="header">
+        <h2>TODO LIST</h2>
+    </header>
+
+    <main id="mainContainer">
+        <div id="todoContainer">
+             
+        </div> 
+        <button id="add-item">Add New ToDo Item</button>
+        <div id="form-container">
+             <div id="form">
+                 <div id="item">
+                     <div>
+                         <input type="text" id="name" placeholder="Name of task" required>
+                     </div>
+                 </div>
+                 <div id="item">
+                     <div>
+                         <textarea name="description" id="description" cols="30" rows="10" placeholder="Description"></textarea>
+                     </div>
+                 </div>
+                 <div id="item">
+                     <label for="due-date">
+                         Due Date
+                     </label>
+                     <div>
+                         <input type="date" id="due-date" required>
+                     </div>
+                 </div>
+                 <div id="item">
+                     <label for="priority">
+                         Priority?
+                     </label>
+                     <div>
+                         <select name="priority" id="priority" required>
+                             <option value="Read">High</option>
+                             <option value="Not yet">Low</option>
+                             <option value="Not yet">Mid</option>
+                         </select>
+                 </div>
+                 <div id="button">
+                     <button id="submit">
+                         Submit
+                     </button>
+                     <button id="cancel">
+                         Cancel
+                     </button>
+                 </div>
+             </div> 
+        </div>
+     </main>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
