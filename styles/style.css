@@ -21,13 +21,34 @@ h2{
 }
 
 main{
-    width:80%;
+    width:100%;
     margin: 50px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     
 }
+
+section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section > .clickable > p{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+.clickable > p:hover {
+    cursor: pointer;
+    color: #665df5;
+}
+
+.border {
+    border-bottom: 5px solid black;
+  }
 
 #form-container{
     display: none;
@@ -53,7 +74,7 @@ main{
     position: absolute;
     top: 15%;
     left: 25%;
-    border-radius: 8px;
+    border-radius: 25px;
 }
 
 #item{
